@@ -108,6 +108,7 @@
         const w = u(n, "div", "EthDonateButton--InputRow", h),
             m = u(n, "input", "EthDonateButton--InputRow--Input", w);
         m.placeholder = "0.0Ξ", m.min = "0.01", m.step = "0.01", m.type = "number";
+        if (m < 0.01){m=0.01};
         const b = u(n, "div", "EthDonateButton--InputRow--Button disabled", w);
         if (b.innerHTML = "Buy", !e) {
             l.className = l.className + " disabled";
