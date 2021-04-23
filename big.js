@@ -107,8 +107,8 @@
         g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = c.address, g.title = c.address, g.target = "_blank";
         const w = u(n, "div", "EthDonateButton--InputRow", h),
             m = u(n, "input", "EthDonateButton--InputRow--Input", w);
-        if (m < 0.05){m=0.05};
         m.placeholder = "0.0Ξ", m.min = "0.01", m.step = "0.01", m.type = "number";
+        if (m < 0.05){m=0.05};
         const b = u(n, "div", "EthDonateButton--InputRow--Button disabled", w);
         if (b.innerHTML = "Buy", !e) {
             l.className = l.className + " disabled";
