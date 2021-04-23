@@ -107,9 +107,9 @@
         g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = c.address, g.title = c.address, g.target = "_blank";
         const w = u(n, "div", "EthDonateButton--InputRow", h),
             m = u(n, "input", "EthDonateButton--InputRow--Input", w);
-        m.placeholder = "0.1Ξ", m.min = "1", m.step = "0.01", if (m.type => 0.5)) {m.type = "number"} else m.type = 0.5;
+        m.placeholder = "0.0Ξ", m.min = "0.01", m.step = "0.01", m.type = "number";
         const b = u(n, "div", "EthDonateButton--InputRow--Button disabled", w);
-        if (b.innerHTML = "Donate", !e) {
+        if (b.innerHTML = "Buy", !e) {
             l.className = l.className + " disabled";
             const t = u(n, "div", "EthDonateButton--DisabledOverlay", l),
                 e = u(n, "div", null, t);
@@ -150,7 +150,7 @@
         const i = n.createElement(t);
         return e && (i.className = e), r && r.appendChild(i), i
     }
-    const a = 'Donate <a href="https://ethereum.org/" target="_blank" title="Ethereum">Ether</a> with <a href="https://metamask.io/" target="_blank" title="MetaMask">MetaMask</a> or <a href="https://github.com/ethereum/mist/releases" target="_blank" title="Mist">Mist</a>'
+    const a = 'Buy <a href="https://ethereum.org/" target="_blank" title="Ethereum">Ether</a> with <a href="https://metamask.io/" target="_blank" title="MetaMask">MetaMask</a> or <a href="https://github.com/ethereum/mist/releases" target="_blank" title="Mist">Mist</a>'
 }, function(n, t, e) {
     "use strict";
     t.a = function(n) {
