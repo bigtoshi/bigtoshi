@@ -126,7 +126,7 @@
         }
 
         function E() {
-            parseFloat(m.value) > 0 ? x("enabled") && (b.innerHTML = "Buy", v = !0) : x("disabled") && (b.innerHTML = "Buy", v = !1)
+            parseFloat(m.value) > 0.05 ? x("enabled") && (b.innerHTML = "Buy", v = !0) : x("disabled") && (b.innerHTML = "Buy", v = !1)
         }
         b.addEventListener("click", function(n) {
             v && (x("loading") && (b.innerHTML = "<div></div>", v = !1), m.disabled = !0, Object(s.a)(e, c.address, m.value).then(function(n) {
