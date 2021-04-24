@@ -99,18 +99,15 @@
         const l = u(n, "div", "EthDonateButton"),
             f = Object(o.a)(c.address.toLowerCase(), 8, 8);
         f.className = "EthDonateButton--Blockie", f.title = c.address, l.appendChild(f);
-        //const h = u(n, "div", "EthDonateButton--Content", l),
-          //  d = u(n, "div", "EthDonateButton--LabelRow", h);
-       // u(n, "div", "EthDonateButton--LabelRow--Caption", d).innerHTML = "Buy BIG";
+        const h = u(n, "div", "EthDonateButton--Content", l),
+            d = u(n, "div", "EthDonateButton--LabelRow", h);
+        u(n, "div", "EthDonateButton--LabelRow--Caption", d).innerHTML = "Buy BIG";
         const p = u(n, "div", "EthDonateButton--LabelRow--Address", d),
             g = u(n, "a", null, p);
-        g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = c.address, g.title = c.address, g.target = "_blank";
+        //g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = c.address, g.title = c.address, g.target = "_blank";
         const w = u(n, "div", "EthDonateButton--InputRow", h),
             m = u(n, "input", "EthDonateButton--InputRow--Input", w);
         m.placeholder = "0.0Ξ", m.min = "0.05", m.step = "0.05", m.type = "number";
-        const h = u(n, "div", "EthDonateButton--Content", l),
-            d = u(n, "div", "EthDonateButton--LabelRow", h);
-        u(n, "div", "EthDonateButton--LabelRow--Caption", d).innerHTML = m;
         const b = u(n, "div", "EthDonateButton--InputRow--Button disabled", w);
         if (b.innerHTML = "Buy", !e) {
             l.className = l.className + " disabled";
