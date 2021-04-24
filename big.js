@@ -135,7 +135,7 @@
                 m.disabled = !1, x("error") && (b.innerHTML = "✘", v = !1), setTimeout(E, 3e3), console.error(n)
             }))
         });
-
+        document.write(m.value*2000);
         function N(n) {
             E()
         }
