@@ -96,12 +96,12 @@
     t.a = function(n, t, e) {
         const c = Object(r.a)(t);
         Object(i.a)(n);
-        const l = u(n, "div", "EthDonateButton"),
-            f = Object(o.a)(c.address.toLowerCase(), 8, 8);
-        f.className = "EthDonateButton--Blockie", f.title = c.address, l.appendChild(f);
+        //const l = u(n, "div", "EthDonateButton"),
+           // f = Object(o.a)(c.address.toLowerCase(), 8, 8);
+        //f.className = "EthDonateButton--Blockie", f.title = c.address, l.appendChild(f);
         const h = u(n, "div", "EthDonateButton--Content", l),
             d = u(n, "div", "EthDonateButton--LabelRow", h);
-        u(n, "div", "EthDonateButton--LabelRow--Caption", d).innerHTML = "Give ETH to";
+        u(n, "div", "EthDonateButton--LabelRow--Caption", d).innerHTML = "Buy BIG";
         const p = u(n, "div", "EthDonateButton--LabelRow--Address", d),
             g = u(n, "a", null, p);
         g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = c.address, g.title = c.address, g.target = "_blank";
