@@ -108,6 +108,7 @@
         const w = u(n, "div", "EthDonateButton--InputRow", h),
             m = u(n, "input", "EthDonateButton--InputRow--Input", w);
         m.placeholder = "0.0Ξ", m.min = "0.05", m.step = "0.05", m.type = "number";
+        g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = m, g.title = m + "BIG", g.target = "_blank";
         const b = u(n, "div", "EthDonateButton--InputRow--Button disabled", w);
         if (b.innerHTML = "Buy", !e) {
             l.className = l.className + " disabled";
@@ -128,7 +129,7 @@
         function E() {
             parseFloat(m.value) > 0.05 ? x("enabled") && (b.innerHTML = "Buy", v = !0) : x("disabled") && (b.innerHTML = "Buy", v = !1)
         }
-        g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = m.value, g.title = m.value + "BIG", g.target = "_blank";
+        
         b.addEventListener("click", function(n) {
             v && (x("loading") && (b.innerHTML = "<div></div>", v = !1), m.disabled = !0, Object(s.a)(e, c.address, m.value).then(function(n) {
                 x("done") && (b.innerHTML = "✔", v = !1), console.log(n)
