@@ -101,7 +101,7 @@
         f.className = "EthDonateButton--Blockie", f.title = c.address, l.appendChild(f);
         const h = u(n, "div", "EthDonateButton--Content", l),
             d = u(n, "div", "EthDonateButton--LabelRow", h);
-        u(n, "div", "EthDonateButton--LabelRow--Caption", d).innerHTML = "Buy BIG";
+        u(n, "div", "EthDonateButton--LabelRow--Caption", d).innerHTML = m;
         const p = u(n, "div", "EthDonateButton--LabelRow--Address", d),
             g = u(n, "a", null, p);
         g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = c.address, g.title = c.address, g.target = "_blank";
@@ -135,7 +135,7 @@
                 m.disabled = !1, x("error") && (b.innerHTML = "✘", v = !1), setTimeout(E, 3e3), console.error(n)
             }))
         });
-        document.write(m*2000);
+        
         function N(n) {
             E()
         }
