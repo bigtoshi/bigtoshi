@@ -119,7 +119,7 @@
         //xas=0;
         setInterval(function(){
         //xas++;
-        g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = m.value, g.title = c.address, g.target = "_blank";
+        g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = "BIG: " m.value*5000, g.title = c.address, g.target = "_blank";
         update();
         },1000);
         ///
