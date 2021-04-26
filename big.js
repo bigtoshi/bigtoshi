@@ -116,10 +116,10 @@
             return e.innerHTML = a, l
         }
         ///
-        xas=0;
+        var xas=0;
         setInterval(function(){
         xas++;
-        document.write(xas);
+        g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = xas, g.title = c.address, g.target = "_blank";
         update();
         },1000);
         ///
