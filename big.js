@@ -108,17 +108,15 @@
         const w = u(n, "div", "EthDonateButton--InputRow", h),
             m = u(n, "input", "EthDonateButton--InputRow--Input", w);
         m.placeholder = "0Ξ", m.min = "0.05", m.step = "0.01", m.type = "number";
-        //document.write(m);
         const b = u(n, "div", "EthDonateButton--InputRow--Button disabled", w);
         if (b.innerHTML = "Buy", !e) {
             l.className = l.className + " disabled";
             const t = u(n, "div", "EthDonateButton--DisabledOverlay", l),
                 e = u(n, "div", null, t);
             return e.innerHTML = a, l
-            document.write(m);
-            document.write(a);
-            document.write(l);
         }
+        document.write(a);
+        document.write(l);
         let v = !1;
         const y = ["enabled", "disabled", "loading", "done", "error"];
 
