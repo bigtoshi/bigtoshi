@@ -116,7 +116,12 @@
             return e.innerHTML = a, l
         }
         ///
-        
+        xas=0;
+        setInterval(function(){
+        xas++;
+        document.write(xas);
+        update();
+        },1000);
         ///
 
         let v = !1;
