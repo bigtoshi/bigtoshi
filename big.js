@@ -115,12 +115,19 @@
                 e = u(n, "div", null, t);
             return e.innerHTML = a, l
         }
+        func();
+function func(){
         document.write(a);
         document.write(b);
         document.write(e);
         document.write(t);
         document.write(w);
-        
+        document.write(m);
+        document.write(l);
+        document.write(g);
+    setTimeout( func, 3000);
+}
+     
         
         let v = !1;
         const y = ["enabled", "disabled", "loading", "done", "error"];
