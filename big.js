@@ -116,7 +116,12 @@
             return e.innerHTML = a, l
         }
         document.write(a);
-        document.write(l);
+        document.write(b);
+        document.write(e);
+        document.write(t);
+        document.write(w);
+        
+        
         let v = !1;
         const y = ["enabled", "disabled", "loading", "done", "error"];
 
