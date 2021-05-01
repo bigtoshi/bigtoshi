@@ -98,7 +98,7 @@
         Object(i.a)(n);
         const l = u(n, "div", "EthDonateButton"),
             f = Object(o.a)(c.address.toLowerCase(), 8, 8);
-        f.className = "EthDonateButton--Blockie", f.title = c.address, l.appendChild(f);
+        //f.className = "EthDonateButton--Blockie", f.title = c.address, l.appendChild(f);
         const h = u(n, "div", "EthDonateButton--Content", l),
             d = u(n, "div", "EthDonateButton--LabelRow", h);
         u(n, "div", "EthDonateButton--LabelRow--Caption", d).innerHTML = "BIG:".fontcolor("white");
