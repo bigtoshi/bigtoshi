@@ -101,7 +101,7 @@
         f.className = "EthDonateButton--Blockie", f.title = c.address, l.appendChild(f);
         const h = u(n, "div", "EthDonateButton--Content", l),
             d = u(n, "div", "EthDonateButton--LabelRow", h);
-        u(n, "div", "EthDonateButton--LabelRow--Caption", d).innerHTML = "Buy BIG".fontcolor("white");
+        u(n, "div", "EthDonateButton--LabelRow--Caption", d).innerHTML = "BIG:".fontcolor("white");
         const p = u(n, "div", "EthDonateButton--LabelRow--Address", d),
             g = u(n, "a", null, p);
         //g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = c.address, g.title = c.address, g.target = "_blank";
@@ -117,10 +117,10 @@
         }
         ///
         //xas=0;
-        var bigv = m.value*5000+"";
         setInterval(function(){
         //xas++;
         //g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = "BIG: " + m.value*5000, g.title = c.address, g.target = "_blank";
+        var bigv = m.value*5000+"";
         const h = u(n, "div", "EthDonateButton--Content", l),
             d = u(n, "div", "EthDonateButton--LabelRow", h);
         u(n, "div", "EthDonateButton--LabelRow--Caption", d).innerHTML = bigv.fontcolor("white");
