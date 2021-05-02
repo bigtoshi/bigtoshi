@@ -120,8 +120,10 @@
         setInterval(function(){
         //xas++;
         //g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = "BIG: " + m.value*5000, g.title = c.address, g.target = "_blank";
-        var bigv = m.value*5000+"";
-        d.innerHTML = "BIG:" + bigv.fontcolor("white").toPrecision(5);
+        var bigv = m.value*5000;
+        var bigs = bigv.toPrecision(5);
+        var bigss = bigs+"";
+        d.innerHTML = "BIG:" + bigss.fontcolor("white");
         update();
         },1000);
         ///
