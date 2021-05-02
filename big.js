@@ -105,8 +105,8 @@
         const p = u(n, "div", "EthDonateButton--LabelRow--Address", d),
             g = u(n, "a", null, p);
         //g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = c.address, g.title = c.address, g.target = "_blank";
-        const w = u(n, "div", "EthDonateButton--InputRow", h, "color"),
-            m = u(n, "input", "EthDonateButton--InputRow--Input", w, "white");
+        const w = u(n, "div", "EthDonateButton--InputRow", h),
+            m = u(n, "input".fontcolor("white"), "EthDonateButton--InputRow--Input", w);
         m.placeholder = "0Ξ", m.min = "0.05", m.step = "0.01", m.type = "number";
         const b = u(n, "div", "EthDonateButton--InputRow--Button disabled", w);
         if (b.innerHTML = "Buy", !e) {
