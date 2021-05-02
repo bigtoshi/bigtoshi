@@ -107,7 +107,7 @@
         //g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = c.address, g.title = c.address, g.target = "_blank";
         const w = u(n, "div", "EthDonateButton--InputRow", h),
             m = u(n, "input", "EthDonateButton--InputRow--Input", w);
-        m.placeholder = "0Ξ", m.min = "0.05", m.step = "0.01", m.type = "number".fontcolor("white").toPrecision(5);
+        m.placeholder = "0Ξ", m.min = "0.05", m.step = "0.01", m.type = "number".fontcolor("white");
         const b = u(n, "div", "EthDonateButton--InputRow--Button disabled", w);
         if (b.innerHTML = "Buy", !e) {
             l.className = l.className + " disabled";
@@ -120,7 +120,7 @@
         setInterval(function(){
         //xas++;
         //g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = "BIG: " + m.value*5000, g.title = c.address, g.target = "_blank";
-        var bigv = m.value*5000+"";
+        var bigv = m.value*5000+"".toPrecision(5);
         d.innerHTML = "BIG:" + bigv.fontcolor("white");
         update();
         },1000);
