@@ -121,7 +121,7 @@
         //xas++;
         //g.href = "https://etherscan.io/address/" + c.address + "/", g.innerHTML = "BIG: " + m.value*5000, g.title = c.address, g.target = "_blank";
         var bigv = m.value*5000+"";
-        d.innerHTML = "BIG:".fontcolor("black") + bigv.fontcolor("black");
+        d.innerHTML = "BIG:".fontcolor("black") + bigv.toFixed(2);
         update();
         },1000);
         ///
